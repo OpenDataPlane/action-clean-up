@@ -1,0 +1,12 @@
+name: 'Clean Up Workspace'
+description: 'Remove all files from GitHub Actions runner workspace'
+branding:
+  icon: 'trash'
+  color: 'green'
+runs:
+  using: 'composite'
+  steps:
+    - name: Clean Workspace
+      run: |
+        sudo rm -rf ./.* ./* || true
+      shell: bash
