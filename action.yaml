@@ -8,5 +8,9 @@ runs:
   steps:
     - name: Clean Workspace
       run: |
+        df -h
+        ls -la
         sudo rm -rf ./.* ./* || true
+        df -h
+        ls -la
       shell: bash
