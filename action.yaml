@@ -11,6 +11,6 @@ runs:
         df -h
         ls -la
         sudo rm -rf ./.* ./* || true
+        sudo docker system prune -a -f
         df -h
-        ls -la
       shell: bash
