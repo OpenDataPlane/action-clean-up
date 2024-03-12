@@ -8,9 +8,7 @@ runs:
   steps:
     - name: Clean Workspace
       run: |
-        df -h
-        ls -la
         sudo rm -rf ./.* ./* || true
-        sudo docker system prune -a -f
+        sudo docker system prune -a -f || true
         df -h
       shell: bash
